@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Interactive Web with JavaScript – Tic-Tac-Toe Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎮 Tic-Tac-Toe Interactive Game</h1>
+    <button id="themeToggle">🌙 Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <!-- Game Section -->
+    <section>
+      <h2>Play the Game</h2>
+      <div id="gameBoard" class="board">
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+        <button class="cell" data-cell></button>
+      </div>
+      <p id="gameMessage"></p>
+      <button id="restartBtn">Restart Game</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>❓ Game FAQ</h2>
+      <div class="faq">
+        <button class="faq-question">How to download and install the game?</button>
+        <div class="faq-answer">You can download it from the official website and follow the installation guide provided.</div>
+      </div>
+      <div class="faq">
+        <button class="faq-question">How to set up the game?</button>
+        <div class="faq-answer">Once installed, open the app and click “New Game” to start playing.</div>
+      </div>
+      <div class="faq">
+        <button class="faq-question">How to play the game?</button>
+        <div class="faq-answer">Players take turns clicking cells. The first to line up 3 marks (X or O) wins!</div>
+      </div>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section>
+      <h2>📋 Enquiry Form</h2>
+      <form id="enquiryForm">
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Enquiry:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+      </form>
+      <p id="formFeedback"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
